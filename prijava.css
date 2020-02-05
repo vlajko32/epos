@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(205, 216, 216);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.navbar-links ul{
+    margin: 0 0 0 550px;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    background: rgb(21, 205, 230);
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+form{
+    margin: 20px auto;
+    width: 320px;
+}
+
+#topBtn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+
+input{
+    padding: 10px;
+    font-size: inherit;
+}
+
+input[type="text"]{
+    display: block;
+    margin-bottom:  25px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+input[type="email"]{
+    display: block;
+    margin-bottom:  25px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+input[type="radio"]{
+    margin: 0 8px 25px 18px;
+}
+
+button[type="submit"]{
+    width: 344px;
+    height: 45px;
+    border: none;
+    border: 2px solid white;
+    background: black;
+    color: white;
+}
+
+button[type="reset"]{
+    width: 344px;
+    height: 45px;
+    border: 2px solid white;
+    background: black;
+    color: white;
+}
+
+input[type="radio"]:checked + label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type="reset"]{
+    width: 344px;
+    height: 45px;
+    border: none;
+    border: 2px solid white;
+    background: black;
+    color: white;
+}
+
+input[type="number"]{
+    display: block;
+    margin-bottom:  25px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+input[type="tel"]{
+    display: block;
+    margin-bottom:  25px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: fnone;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 975px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+}
+
+
+
+
+

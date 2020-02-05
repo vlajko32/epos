@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/grb.jpg" type="image/x-icon">
+    <title>Prijava</title>
+    <link rel="stylesheet" href="prijava.css">
+    <script src="prijava.js" defer></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="dokument.js"></script>
+</head>
+<body>
+    
+        <nav class="navbar">
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                 <ul>
+                    <li><a class="a" href = "kkfon.html">Početna</a></li>
+                    <li><a class="a" href = "galerija.html">Galerija</a></li>
+                    <li><a class="a" href = "prijava.html">Prijava</a></li>
+                    <li><a class="a" href = "uspesi.html">Uspesi</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+        <h1>Registracija:</h1>
+        <form onsubmit="return obrada()">
+
+            <input type="text" id="ime" placeholder="Ime">
+            <input type="text" id="prezime" placeholder="Prezime"> 
+            <input type="number" id="godiste" placeholder="Godiste" min="1990" max="2020">
+            <input type="tel" id="telefon" placeholder="Telefon">
+            <input type="email" id="email" placeholder="Email"> 
+            <input type="text" id="klub" placeholder="Prethodni klub"> 
+
+            <div>
+                <h4>Pozicija:</h4>
+                <input type="radio" id="PG" ><label for="PG">PG</label>
+                <input type="radio" id="SG" ><label for="SG">SG</label>
+                <input type="radio" id="SF" ><label for="SF">SF</label>
+                <input type="radio" id="PF" ><label for="PF">PF</label>
+                <input type="radio" id="C"  ><label for="C">C</label>
+            </div>
+
+            <button type="submit">Potvrda</button>
+            <button type="reset">Poništi</button>
+        </form>
+
+        <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menu').click(function(){
+                    $('ul').toggleClass('active');
+                })
+            })
+        </script>
+
+</body>
+</html>
